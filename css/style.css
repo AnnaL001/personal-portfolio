@@ -1,0 +1,219 @@
+/*===============================
+IMPORTS
+=================================*/
+@import url('/css/fonts.css');
+
+/*===============================
+GLOBAL STYLING
+=================================*/
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: "Teko", sans-serif;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 72px;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+ 
+button.button{
+    padding: .8rem 2.2rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+button.primary-button{
+    background: linear-gradient(90deg, #214cce 0%, #6d8ce8 100%);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow:  0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+button.primary-button::after{
+    position: absolute;
+    top: -2px; 
+    left: -2px;
+    bottom: -2px;  
+    right: -2px;
+    background: linear-gradient(90deg, #214cce 0%, #6d8ce8 100%);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+p.para{
+    color: #777777;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/*===============================
+HEADER
+=================================*/
+.header .main-menu .navbar{
+    margin: 0.3rem 5rem;
+}
+
+.header .logo .navbar-brand{
+    width: 40px;
+    height: 40px;
+    color:#214cce;
+    border: 2px solid #214cce;
+    border-radius: 50%;
+    font-weight: 600;
+    text-transform: uppercase; 
+}
+
+.header .nav-item .nav-link{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2px;
+    padding: 1.7rem;
+    color:#141313;
+}
+
+.header .nav-item .nav-link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2px;
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: #141313;
+}
+
+.header .main-menu .navbar-nav a.active{
+    background: radial-gradient(#6d8ce8, #214cce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color, radial-gradient(#6d8ce8, #214cce));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*===============================
+BANNER
+=================================*/
+.main .banner h3.title{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.main .banner h1.title{
+    font-size: 5rem;
+}
+
+.main .banner h4.title{
+    font-size: 1.5rem;
+}
+
+.main .banner .banner-img{
+    padding: 10rem 0;
+    width: 90rem;
+}
+
+/*===============================
+ABOUT
+=================================*/
+section.about{
+    margin: 3.75rem 0;
+}
+.about .about-img{
+    max-width: 60%;
+}
+
+.main .about h2{
+    display: block;
+    font-size: 49px;
+    font-weight: normal;
+    line-height: 60px;
+    letter-spacing: 21px;
+}
+
+.main .about .paragraph p{
+    padding: .4rem 0;
+}
+
+.social-media{
+    font-size: 1.5rem;
+    letter-spacing: 12px;
+    margin: 0 4rem;
+}
+
+/*===============================
+SKILLS
+=================================*/
+.main .skills{
+    padding-bottom:8rem;
+    margin-bottom: 3.75rem;
+}
+
+.main .skills .row{
+    margin: 1.5rem 0;
+}
+
+.main .skills h2{
+    display: block;
+    font-size: 49px;
+    font-weight: normal;
+    line-height: 60px;
+    letter-spacing: 21px;
+    text-align: center;
+}
+
+/*===============================
+SERVICES
+=================================*/
+section.services{
+    padding-bottom: 4.5rem;
+}
+
+/*===============================
+CSS MEDIA QUERIES
+=================================*/
+/*===For screens less than or equal to 576px===*/
+@media only screen and (max-width: 576px){
+    .row{
+        text-align: center;
+    }
+
+    .col-12{
+        margin:1rem 0;
+    }
+
+    .header .main-menu .navbar{
+        margin: 0;
+    }
+
+}
+
+
+
+
+
+
