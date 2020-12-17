@@ -67,6 +67,17 @@ p.para{
     line-height: 25px;
 }
 
+section.section-title{
+    display: block;
+    font-size: 49px;
+    font-weight: normal;
+    line-height: 60px;
+    letter-spacing: 21px;
+}
+
+.text-color{
+    color: #777777;
+}
 /*===============================
 HEADER
 =================================*/
@@ -110,7 +121,7 @@ HEADER
 }
 
 .header .main-menu .navbar-nav a:hover{
-    background: var(--gradient-color, radial-gradient(#6d8ce8, #214cce));
+    background: radial-gradient(#6d8ce8, #214cce);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -141,18 +152,10 @@ BANNER
 ABOUT
 =================================*/
 section.about{
-    margin: 3.75rem 0;
+    margin: 4rem 0;
 }
 .about .about-img{
     max-width: 60%;
-}
-
-.main .about h2{
-    display: block;
-    font-size: 49px;
-    font-weight: normal;
-    line-height: 60px;
-    letter-spacing: 21px;
 }
 
 .main .about .paragraph p{
@@ -169,28 +172,64 @@ section.about{
 SKILLS
 =================================*/
 .main .skills{
-    padding-bottom:8rem;
-    margin-bottom: 3.75rem;
+    margin: 5rem 0;
 }
 
 .main .skills .row{
-    margin: 1.5rem 0;
+    margin: 4rem 0;
 }
 
-.main .skills h2{
-    display: block;
-    font-size: 49px;
-    font-weight: normal;
-    line-height: 60px;
-    letter-spacing: 21px;
-    text-align: center;
+.main .skills .progress{
+    height:50%;
+    z-index:1;
 }
 
 /*===============================
 SERVICES
 =================================*/
 section.services{
-    padding-bottom: 4.5rem;
+    margin: 5rem 0;
+}
+section.services .card{
+    text-align: center;
+    box-shadow:  10px 30px rgba(57, 56, 61, 0.205);
+    z-index:1;
+}
+section.services .row{
+    margin: 4rem 0;
+}
+section.services .card:hover{
+    animation: fronte 1s linear forwards; 
+}
+
+@keyframes fronte {
+    from { z-index: 0; transform: scale(0.9); opacity: 0.5; }
+    to { z-index: 4; transform: scale(1.1); opacity: 1; }
+  }
+
+section.services .card i{
+    font-size: 5rem;
+    margin: 2rem 0;
+    background: radial-gradient(#6d8ce8, #214cce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+
+.main .portfolio .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110px;
+    text-transform: uppercase;
+}
+
+.main .portfolio .button-group button + button{
+    padding-left: 3rem;
 }
 
 /*===============================
@@ -207,6 +246,10 @@ CSS MEDIA QUERIES
     }
 
     .header .main-menu .navbar{
+        margin: 0;
+    }
+
+    .main .skills .row{
         margin: 0;
     }
 
