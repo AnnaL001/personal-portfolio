@@ -78,6 +78,12 @@ section.section-title{
 .text-color{
     color: #777777;
 }
+
+button:focus,
+button:active,button:hover{
+    outline: none;
+}
+
 /*===============================
 HEADER
 =================================*/
@@ -148,6 +154,7 @@ BANNER
     width: 90rem;
 }
 
+
 /*===============================
 ABOUT
 =================================*/
@@ -168,6 +175,7 @@ section.about{
     margin: 0 4rem;
 }
 
+
 /*===============================
 SKILLS
 =================================*/
@@ -181,6 +189,7 @@ SKILLS
 
 .main .skills .progress{
     height:50%;
+    box-shadow:  3px 3px rgba(57, 56, 61, 0.205);
     z-index:1;
 }
 
@@ -190,11 +199,15 @@ SERVICES
 section.services{
     margin: 5rem 0;
 }
-section.services .card{
-    text-align: center;
-    box-shadow:  10px 30px rgba(57, 56, 61, 0.205);
+.main .card{
+    box-shadow:  3px 3px rgba(57, 56, 61, 0.205);
     z-index:1;
 }
+
+section.services .card{
+    text-align: center;
+}
+
 section.services .row{
     margin: 4rem 0;
 }
@@ -209,7 +222,7 @@ section.services .row{
     font-size: 15px;
 }
 
-section.services .card:hover{
+.main .card:hover{
     animation: fronte 1s linear forwards; 
 }
 
@@ -231,23 +244,32 @@ section.services .card i{
 /*===============================
 PORTFOLIO
 =================================*/
-.main .portfolio .button-group button{
+section.portfolio{
+    margin: 5rem 0;
+}
+
+section.portfolio .button-group button{
     background: transparent;
     border: none;
-    font: normal 500 16px/130px var(--roboto);
     font-weight: 500;
     font-size: 16px;
     line-height: 60px;
     text-transform: uppercase;
 }
 
-.main .portfolio .button-group button + button{
+section.portfolio .button-group button + button{
     padding-left: 3rem;
 }
 
-.main .portfolio .button-group button:focus{
-    outline: none;
+section.portfolio .button-group button.active,
+section.portfolio .button-group button:hover{
+    background: radial-gradient(#6d8ce8, #214cce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
+
+
 
 
 /*===============================
@@ -255,6 +277,7 @@ TESTIMONIAL
 =================================*/
 section.testimonial{
     margin: 5rem 0;
+    
 }
 .main .testimonial .owl-carousel .owl-item{
     display: flex;
@@ -272,7 +295,14 @@ section.testimonial{
 }
 
 
-.contact .card .card-body i{
+/*===============================
+CONTACT ME
+=================================*/
+section.contact{
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+}
+section.contact .card .card-body i{
     font-size: 4rem;
     margin: 2rem 0;
     background: radial-gradient(#6d8ce8, #214cce);
@@ -280,6 +310,7 @@ section.testimonial{
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
 
 /*===============================
 CSS MEDIA QUERIES
@@ -300,6 +331,11 @@ CSS MEDIA QUERIES
 
     .main .skills .row{
         margin: 0;
+    }
+
+    .main .banner .button{
+        margin-right: auto;
+        margin-left: auto;
     }
 
 }
