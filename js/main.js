@@ -1,5 +1,27 @@
 $(document).ready(function () {
-    //Filter projects in portfolio
+    // *** Sticky navigation bar ***
+     //stickyNavbar() executed when user scrolls
+    window.onscroll = function(){
+        stickyNavbar()
+    };
+
+    // Get navigation bar
+    var navbar = document.getElementById("navbar");
+
+    //Get offset position of navigation bar
+    var navbar_sticky = navbar.offsetTop;
+
+    //Sticky class added upon reaching scroll position and removed
+    // when scroll position is left
+    function stickyNavbar(){
+        if(window.pageYOffset >= navbar_sticky){
+            navbar.classList.add("navbar_sticky");
+        }else{
+            navbar.classList.remove("navbar_sticky");
+        }
+    }
+    
+    //*** Filter projects in portfolio ***
     var $buttons = $('.portfolio .button-group button');
 
 
@@ -16,7 +38,7 @@ $(document).ready(function () {
         return false;
     })
 
-    //Carousel
+    //*** Carousel ***
     $('.owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,
