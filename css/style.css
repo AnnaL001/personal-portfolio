@@ -135,6 +135,16 @@ HEADER
     background-clip: text;
 }
 
+.navbar_sticky{
+    position: fixed;
+    top: -1px;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0 10px 30px rgba(57, 56, 61, 0.205);
+    transition: background 1s ease;
+}
+
 /*===============================
 BANNER
 =================================*/
