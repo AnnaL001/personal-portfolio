@@ -18,7 +18,7 @@ html, body{
 
 .title{
     font-weight: bold;
-    font-size: 50px;
+    font-size: 55px;
     line-height: 72px;
 }
 
@@ -29,7 +29,7 @@ html, body{
 .button{
     padding: .8rem 2.2rem;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     position: relative;
     border: 3px solid transparent;
@@ -65,13 +65,13 @@ html, body{
 p.para{
     color: #777777;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
 }
 
 section.section-title{
     display: block;
-    font-size: 49px;
+    font-size: 54px;
     font-weight: normal;
     line-height: 60px;
     letter-spacing: 21px;
@@ -106,19 +106,10 @@ HEADER
 .header .nav-item .nav-link{
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 2px;
     padding: 1.7rem;
     color:#141313;
-}
-
-.header .nav-item .nav-link{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 2px;
-    text-transform: uppercase;
-    padding: 1.7rem;
-    color: #141313;
 }
 
 .header .main-menu .navbar-nav a.active{
@@ -154,11 +145,11 @@ BANNER
 }
 
 .main .banner h1.title{
-    font-size: 5rem;
+    font-size: 5.2rem;
 }
 
 .main .banner h4.title{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .main .banner .banner-img{
@@ -182,7 +173,7 @@ section.about{
 }
 
 .social-media{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     letter-spacing: 12px;
     margin: 0 4rem;
 }
@@ -231,7 +222,8 @@ section.services .row{
 }
 
 .main .card .card-body p{
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .main .card:hover{
@@ -264,7 +256,7 @@ section.portfolio .button-group button{
     background: transparent;
     border: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 60px;
     text-transform: uppercase;
 }
@@ -281,7 +273,13 @@ section.portfolio .button-group button:hover{
     background-clip: text;
 }
 
+section.portfolio h4{
+    font-size:21px:
+}
 
+section.portfolio p{
+    font-size:18px:
+}
 
 
 /*===============================
